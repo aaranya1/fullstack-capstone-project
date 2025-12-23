@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
             "Content-Type": "application/json",
             "Email": email,
         },
-        body: JSON.stringify(payload),()
+        body: JSON.stringify(payload),
     });
 
     if (response.ok) {
