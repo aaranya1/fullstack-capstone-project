@@ -83,7 +83,7 @@ function SearchPage() {
                             <label htmlFor='conditionSelect'>Condition</label>
                             <select id="conditionSelect" className='form-control my-1'>
                                 <option value="">All</option>
-                                {categories.map(condition => (
+                                {conditions.map(condition => (
                                     <option key={condition} value={condition}>{condition}</option>
                                 ))}
                             </select>
