@@ -15,7 +15,7 @@ function LoginPage() {
     const {setIsLoggedIn} = useAppContext();
 
     useEffect(() => {
-        if(bearerToken){
+        if(sessionStorage.getItem('auth-token')){
             navigate('/app');
         }
     }, [navigate])
@@ -23,7 +23,7 @@ function LoginPage() {
     // insert code here to create handleLogin function and include console.log
     const handleLogin = async () => {
         try{
-            const response = await fetch(`/api/auth/login`, {
+            const response = await fetch(`${urlConfig.backendUrl}/api/auth/login`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
