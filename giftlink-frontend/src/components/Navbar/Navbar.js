@@ -50,7 +50,7 @@ export default function Navbar() {
                     <Link className="nav-link" to="/app">Gifts</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" href="/app/search">Search</Link>
+                        <Link className="nav-link" to="/app/search">Search</Link>
                     </li>
                     <ul className="navbar-nav m1-auto">
                         {isLoggedIn ? (
